@@ -34,7 +34,12 @@ jobs:
             artifact_name: flipper-waveshare-c6-1.9
             chip: esp32c6
             flash_size: 8MB
-
+          - name: cardputer_adv
+            script_key: cardputer_adv
+            build_dir: build_cardputer_adv
+            artifact_name: flipper-cardputer-adv-hans
+            chip: esp32s3
+            flash_size: 8MB
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
